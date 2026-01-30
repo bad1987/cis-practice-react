@@ -1,0 +1,86 @@
+.terms-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.terms-container {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.terms-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.terms-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.terms-section h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.terms-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.terms-content p {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.terms-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #f3f4f6;
+}
+
+.terms-footer p {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.contact-link {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 2rem 1.5rem;
+  }
+  
+  .terms-title {
+    font-size: 2rem;
+  }
+  
+  .terms-section h2 {
+    font-size: 1.5rem;
+  }
+}
