@@ -61,13 +61,25 @@ npm run dev
 - When asked "Use rolldown-vite (Experimental)?" → Select **No** (use stable Vite)
 - When asked "Install with npm and start now?" → Select **Yes** (auto-installs and starts)
 
-### Step 2: Install Required Dependencies
+### Step 2: Install React Router
+
+React Router is not included by default, so install it for multi-page navigation:
 
 ```bash
-# React Router for multi-page navigation
 npm install react-router-dom
+```
 
-# All other dependencies (React, Vite) are included by default
+**What this installs:**
+- `react-router-dom` - Client-side routing library
+- React Router provides: BrowserRouter, Routes, Route, Link, useNavigate, useParams
+
+**Alternative package managers:**
+```bash
+# Using yarn
+yarn add react-router-dom
+
+# Using pnpm
+pnpm add react-router-dom
 ```
 
 ### Step 3: Project Structure Created
@@ -158,6 +170,38 @@ function App() {
   );
 }
 ```
+
+---
+
+## Complete Setup Command Summary
+
+All commands to recreate this project from scratch:
+
+```bash
+# 1. Create React project with Vite
+npm create vite@latest practice-react -- --template react
+
+# 2. Navigate to project
+cd practice-react
+
+# 3. Install dependencies (includes React, Vite, ESLint)
+npm install
+
+# 4. Install React Router for navigation
+npm install react-router-dom
+
+# 5. Start development server
+npm run dev
+
+# Project is now running at http://localhost:5173
+```
+
+**What was installed:**
+- **Vite** - Build tool and development server
+- **React 19** - UI library
+- **React DOM** - React renderer for web
+- **ESLint** - Code linting
+- **React Router DOM** - Client-side routing
 
 ---
 
